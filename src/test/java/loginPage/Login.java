@@ -21,6 +21,7 @@ public class Login {
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("Email")).sendKeys("sushant@cateina.com");
 		driver.findElement(By.id("Passwd")).sendKeys("Search@123");
+		driver.findElement(By.id("SignIn")).click();
 	}
 	@AfterTest
 	public void tearDown() {
